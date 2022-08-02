@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)"
-options: "a2c1b43a5043cc21a1c5bafb8322a95d2234b53d346373612eef411ef89b6f2e"
-build_start_time: [1656176808, 222146987]
-build_end_time: [1656176808, 989689826]
-inputs:
-  "/Users/gurusaishreeshtirumalla/admin_vce/macos/Flutter/GeneratedPluginRegistrant.swift": [1656176781, 438300132]
-  "/Users/gurusaishreeshtirumalla/admin_vce/macos/Runner/AppDelegate.swift": [1648441804, 0]
-  "/Users/gurusaishreeshtirumalla/admin_vce/macos/Runner/MainFlutterWindow.swift": [1648441804, 0]
