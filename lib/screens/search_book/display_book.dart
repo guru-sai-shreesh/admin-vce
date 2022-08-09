@@ -62,22 +62,14 @@ class _DisplayBookState extends State<DisplayBook>
             child: FlatButton(
               color: AppColors.primaryColor,
               onPressed: (() {
-                setState(() {
-                  if (liked_books!.contains(popularBookModel)) {
-                    liked_books!.remove(popularBookModel);
-                  } else {
-                    liked_books!.add(popularBookModel);
-                  }
-                });
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>
+                        EditBook(popularBookModel: popularBookModel)));
               }),
               minWidth: 20,
               child: Icon(
-                liked_books!.contains(popularBookModel)
-                    ? Icons.favorite
-                    : Icons.favorite,
-                color: liked_books!.contains(popularBookModel)
-                    ? Colors.red
-                    : Colors.white,
+                Icons.edit_rounded,
+                color: editClicked ? Colors.black : Colors.white,
               ),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
