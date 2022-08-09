@@ -5,7 +5,7 @@ class Subscription {
   late String provider;
   late String? description;
   late String? credentials;
-  late List<String>? relevance;
+  late List<String> relevance;
   late String? image_address;
   late List<String>? tags;
   late List<Book>? popularPublications;
@@ -19,7 +19,7 @@ class Subscription {
     this.image_address,
     this.credentials,
     this.popularPublications,
-    this.relevance,
+    required this.relevance,
     required this.subscriptionUrl,
   });
 }

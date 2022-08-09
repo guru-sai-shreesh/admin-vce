@@ -1,4 +1,5 @@
 import 'package:admin_vce/model/book_model.dart';
+import 'package:admin_vce/model/colors.dart';
 import 'package:admin_vce/model/personal_data.dart';
 import 'package:admin_vce/model/fetchtop10.dart';
 import 'package:admin_vce/screens/items_list.dart';
@@ -44,13 +45,7 @@ class _RecomendationTabState extends State<RecomendationTab> {
               ],
               border:
                   Border.all(color: Colors.white.withOpacity(0.2), width: 1.0),
-              gradient: LinearGradient(
-                colors: [
-                  Colors.white.withOpacity(0.1),
-                  Colors.white.withOpacity(0.1)
-                ],
-                stops: [0.0, 1.0],
-              ),
+              color: AppColors.badgecolor,
               borderRadius: BorderRadius.circular(10)),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,

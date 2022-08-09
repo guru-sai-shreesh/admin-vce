@@ -5,9 +5,6 @@ import 'package:admin_vce/model/colors.dart';
 import 'package:admin_vce/model/fetchtop10.dart';
 import 'package:admin_vce/model/personal_data.dart';
 import 'package:admin_vce/screens/navigation_drawers/navigation_drawer.dart';
-import 'package:admin_vce/screens/search_book/add_book/enter_isbn.dart';
-import 'package:admin_vce/screens/search_book/add_book/item_issue.dart';
-import 'package:admin_vce/screens/search_book/add_book/return_book.dart';
 import 'package:admin_vce/screens/search_book/display_book.dart';
 import 'package:admin_vce/screens/search_book/display_issue_cart.dart';
 import 'package:admin_vce/screens/items_list.dart';
@@ -104,7 +101,7 @@ class _SearchBookState extends State<SearchBook> with TickerProviderStateMixin {
                     position: BadgePosition.topEnd(top: 3, end: 18),
                     animationDuration: Duration(milliseconds: 300),
                     animationType: BadgeAnimationType.slide,
-                    badgeColor: Colors.white54,
+                    badgeColor: AppColors.badgecolor,
                     badgeContent: Text(
                       (general_issue_cart!.length + bookbank_issue_cart!.length)
                           .toString(),
@@ -126,39 +123,6 @@ class _SearchBookState extends State<SearchBook> with TickerProviderStateMixin {
                 elevation: 0,
               ),
               backgroundColor: Colors.transparent,
-              floatingActionButton: SpeedDial(
-                  icon: Icons.add,
-                  backgroundColor: AppColors.floatingActionButtonColor,
-                  overlayColor: Colors.black,
-                  overlayOpacity: 0.4,
-                  spaceBetweenChildren: 10,
-                  spacing: 10,
-                  children: [
-                    SpeedDialChild(
-                      child: Icon(Icons.add),
-                      label: "Add Book",
-                      onTap: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (((context) => EnterISBN()))));
-                      },
-                    ),
-                    SpeedDialChild(
-                      child: Icon(Icons.add),
-                      label: "Issue Book",
-                      onTap: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (((context) => ItemIssue()))));
-                      },
-                    ),
-                    SpeedDialChild(
-                      child: Icon(Icons.add),
-                      label: "Collect Book",
-                      onTap: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (((context) => CollectItem()))));
-                      },
-                    ),
-                  ]),
               drawer: NavigationDrawer(),
               body: FutureBuilder(
                 future: fetchTop10(),

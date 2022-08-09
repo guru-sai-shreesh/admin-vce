@@ -63,16 +63,16 @@ class _DisplayProjectState extends State<DisplayProject>
               color: AppColors.primaryColor,
               onPressed: (() {
                 setState(() {
-                  if (saveClicked) {
-                    saveClicked = false;
+                  if (saved_projects!.contains(popularProjectModel)) {
+                    saved_projects!.remove(popularProjectModel);
                   } else {
-                    saveClicked = true;
+                    saved_projects!.add(popularProjectModel);
                   }
                 });
               }),
               minWidth: 20,
               child: Icon(
-                saveClicked
+                saved_projects!.contains(popularProjectModel)
                     ? Icons.bookmark_rounded
                     : Icons.bookmark_outline_rounded,
                 color: Colors.white,

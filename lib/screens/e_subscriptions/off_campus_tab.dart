@@ -22,7 +22,7 @@ class _OffCampusTabState extends State<OffCampusTab> {
         itemCount: offCampusSubsList.length,
         itemBuilder: (context, index) {
           return Card(
-            color: AppColors.primaryColor,
+            color: AppColors.cardcolor,
             elevation: 10,
             margin: EdgeInsets.only(bottom: 10),
             shape: RoundedRectangleBorder(

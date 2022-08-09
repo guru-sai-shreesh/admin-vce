@@ -6,6 +6,6 @@ framework module flutter_barcode_scanner {
 }
 
 module flutter_barcode_scanner.Swift {
-    header "flutter_barcode_scanner-Swift.h"
-    requires objc
+  header "flutter_barcode_scanner-Swift.h"
+  requires objc
 }

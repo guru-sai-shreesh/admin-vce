@@ -1,9 +1,11 @@
 import 'package:admin_vce/model/colors.dart';
+import 'package:admin_vce/model/personal_data.dart';
 import 'package:admin_vce/model/subscription_model.dart';
 import 'package:admin_vce/widget/custom_tab_indicator.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DisplaySubscription extends StatefulWidget {
   final Subscription popularSubscriptionModel;
@@ -17,6 +19,13 @@ class DisplaySubscription extends StatefulWidget {
 
 class _DisplaySubscriptionState extends State<DisplaySubscription>
     with TickerProviderStateMixin {
+  final Uri _url = Uri.parse('https://flutter.dev');
+  Future<void> openUrl() async {
+    if (!await launchUrl(_url)) {
+      throw 'Could not launch $_url';
+    }
+  }
+
   final List<Tab> myTabs = <Tab>[
     Tab(
       child: Container(
@@ -39,7 +48,6 @@ class _DisplaySubscriptionState extends State<DisplaySubscription>
   ];
 
   final Subscription popularSubscriptionModel;
-  bool saveClicked = false;
 
   _DisplaySubscriptionState(this.popularSubscriptionModel);
 
@@ -56,18 +64,17 @@ class _DisplaySubscriptionState extends State<DisplaySubscription>
             child: FlatButton(
               color: AppColors.primaryColor,
               onPressed: (() {
-                onTap:
                 setState(() {
-                  if (saveClicked) {
-                    saveClicked = false;
+                  if (saved_subscriptions!.contains(popularSubscriptionModel)) {
+                    saved_subscriptions!.remove(popularSubscriptionModel);
                   } else {
-                    saveClicked = true;
+                    saved_subscriptions!.add(popularSubscriptionModel);
                   }
                 });
               }),
               minWidth: 20,
               child: Icon(
-                saveClicked
+                saved_subscriptions!.contains(popularSubscriptionModel)
                     ? Icons.bookmark_rounded
                     : Icons.bookmark_outline_rounded,
                 color: Colors.white,
@@ -83,10 +90,7 @@ class _DisplaySubscriptionState extends State<DisplaySubscription>
             color: Colors.transparent,
             child: FlatButton(
               color: AppColors.primaryColor,
-              onPressed: (() {
-                onTap:
-                setState(() {});
-              }),
+              onPressed: openUrl,
               minWidth: MediaQuery.of(context).size.width - 130,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -218,7 +222,62 @@ class _DisplaySubscriptionState extends State<DisplaySubscription>
                           ),
                           Padding(
                             padding: EdgeInsets.only(top: 25),
-                            child: Text('Relevenace and Credentials'),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Credentials:',
+                                  style: GoogleFonts.openSans(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                  ),
+                                ),
+                                Text(
+                                  "Username - " +
+                                      popularSubscriptionModel.credentials
+                                          .toString(),
+                                  style: GoogleFonts.openSans(
+                                    fontSize: 14,
+                                    color: Colors.black87,
+                                  ),
+                                ),
+                                Text(
+                                  "Password - " +
+                                      popularSubscriptionModel.credentials
+                                          .toString(),
+                                  style: GoogleFonts.openSans(
+                                    fontSize: 14,
+                                    color: Colors.black87,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 20,
+                                ),
+                                Text(
+                                  'Relavence:',
+                                  style: GoogleFonts.openSans(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                  ),
+                                ),
+                                for (var i = 0;
+                                    i <
+                                        popularSubscriptionModel
+                                            .relevance.length;
+                                    i++) ...[
+                                  Text(
+                                    "- " +
+                                        popularSubscriptionModel.relevance[i],
+                                    style: GoogleFonts.openSans(
+                                      fontSize: 14,
+                                      color: Colors.black87,
+                                    ),
+                                  ),
+                                ],
+                              ],
+                            ),
                           ),
                           Padding(
                             padding: EdgeInsets.only(top: 25),

@@ -10,7 +10,7 @@ import 'package:admin_vce/screens/liked.dart';
 import 'package:admin_vce/screens/my_attendence/my_attendence.dart';
 import 'package:admin_vce/screens/projects/projects.dart';
 import 'package:admin_vce/screens/resources.dart';
-import 'package:admin_vce/screens/saved.dart';
+import 'package:admin_vce/screens/saved/saved.dart';
 import 'package:admin_vce/screens/schedule.dart';
 import 'package:admin_vce/screens/search_book/search_book.dart';
 import 'package:flutter/material.dart';
@@ -88,32 +88,6 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
             },
           ),
           Divider(),
-          ListTile(
-            title: Text("My Attendence"),
-            leading: Icon(Icons.person_outlined),
-            onTap: () => {
-              Navigator.of(context).popUntil(ModalRoute.withName("/")),
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  settings: RouteSettings(name: "/my_attendence"),
-                  builder: (context) => MyAttendence(),
-                ),
-              )
-            },
-          ),
-          ListTile(
-            title: Text("Grades"),
-            leading: Icon(Icons.person_outlined),
-            onTap: () => {
-              Navigator.of(context).popUntil(ModalRoute.withName("/")),
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  settings: RouteSettings(name: "/grades"),
-                  builder: (context) => Grades(),
-                ),
-              )
-            },
-          ),
           ListTile(
             title: Text("Schedule"),
             leading: Icon(Icons.calendar_month_outlined),

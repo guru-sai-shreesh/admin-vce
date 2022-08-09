@@ -6,6 +6,7 @@ import 'package:file_picker/file_picker.dart';
 import 'dart:io';
 
 import 'package:google_fonts/google_fonts.dart';
+import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 File file = File("your initial file");
 
@@ -24,11 +25,15 @@ class _MyRegisterState extends State<MyRegister> {
       //   image: DecorationImage(
       //       image: AssetImage('assets/images/login.png'), fit: BoxFit.cover),
       // ),
-      color: Colors.black,
+      color: Colors.white,
       child: Scaffold(
         appBar: AppBar(
+          title: Text(
+            "E-VCE",
+            style: TextStyle(color: Colors.black),
+          ),
           backgroundColor: Colors.transparent,
-          iconTheme: IconThemeData(color: Colors.white),
+          iconTheme: IconThemeData(color: Colors.black),
           elevation: 0,
         ),
         backgroundColor: Colors.transparent,
@@ -41,16 +46,19 @@ class _MyRegisterState extends State<MyRegister> {
                   Container(
                     width: MediaQuery.of(context).size.width,
                     padding: const EdgeInsets.only(left: 20, top: 10),
-                    child: const Text(
-                      "Create Account",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 30,
-                          fontWeight: FontWeight.w600),
+                    child: GradientText(
+                      "Register Account",
+                      colors: [
+                        Color(0xFF0D47A1),
+                        Color(0xFF1976D2),
+                        // Color(0xFF42A5F5),
+                      ],
+                      style:
+                          TextStyle(fontSize: 29, fontWeight: FontWeight.w700),
                     ),
                   ),
                   SizedBox(
-                    height: 25,
+                    height: 15,
                   ),
                   Align(
                     alignment: Alignment.topCenter,
@@ -58,12 +66,12 @@ class _MyRegisterState extends State<MyRegister> {
                       children: [
                         CircleAvatar(
                           radius: 75,
-                          backgroundColor: AppColors.primaryColor,
+                          backgroundColor: Color(0xFF0D47A1),
                           child: CircleAvatar(
-                            radius: 70,
-                            backgroundColor: Colors.white70,
+                            radius: 71,
+                            backgroundColor: Colors.white,
                             child: CircleAvatar(
-                              radius: 65,
+                              radius: 69,
                               backgroundImage: NetworkImage(
                                   'https://yt3.ggpht.com/ytc/AKedOLRTjSE3cSLWjjTu06H1vmZ3bpTG8SrNONwsfrVh8Q=s900-c-k-c0x00ffffff-no-rj'),
                             ),
@@ -105,7 +113,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -118,7 +126,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white60,
+                            color: Colors.grey,
                           ),
                           decoration: InputDecoration(
                             fillColor: Colors.white10,
@@ -133,13 +141,12 @@ class _MyRegisterState extends State<MyRegister> {
                             hintStyle: GoogleFonts.openSans(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white60,
+                              color: Colors.grey,
                             ),
                             hintText: 'Enter Username',
                             border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
-                              borderSide: BorderSide.none,
                             ),
                           ),
                         ),
@@ -159,7 +166,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -173,7 +180,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white60,
+                            color: Colors.grey,
                           ),
                           decoration: InputDecoration(
                             fillColor: Colors.white10,
@@ -188,13 +195,13 @@ class _MyRegisterState extends State<MyRegister> {
                             hintStyle: GoogleFonts.openSans(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white60,
+                              color: Colors.grey,
                             ),
                             hintText: 'Enter Password',
                             border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
-                              borderSide: BorderSide.none,
+                              // borderSide: BorderSide.none,
                             ),
                           ),
                         ),
@@ -214,7 +221,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -227,7 +234,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white60,
+                            color: Colors.grey,
                           ),
                           decoration: InputDecoration(
                             fillColor: Colors.white10,
@@ -242,13 +249,13 @@ class _MyRegisterState extends State<MyRegister> {
                             hintStyle: GoogleFonts.openSans(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white60,
+                              color: Colors.grey,
                             ),
                             hintText: 'Enter Display Name',
                             border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
-                              borderSide: BorderSide.none,
+                              // borderSide: BorderSide.none,
                             ),
                           ),
                         ),
@@ -268,7 +275,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -281,7 +288,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white60,
+                            color: Colors.grey,
                           ),
                           decoration: InputDecoration(
                             fillColor: Colors.white10,
@@ -296,13 +303,13 @@ class _MyRegisterState extends State<MyRegister> {
                             hintStyle: GoogleFonts.openSans(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white60,
+                              color: Colors.grey,
                             ),
                             hintText: 'Enter Personal Email',
                             border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
-                              borderSide: BorderSide.none,
+                              // borderSide: BorderSide.none,
                             ),
                           ),
                         ),
@@ -322,7 +329,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -335,7 +342,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white60,
+                            color: Colors.grey,
                           ),
                           decoration: InputDecoration(
                             fillColor: Colors.white10,
@@ -350,13 +357,13 @@ class _MyRegisterState extends State<MyRegister> {
                             hintStyle: GoogleFonts.openSans(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white60,
+                              color: Colors.grey,
                             ),
                             hintText: 'Enter Gender',
                             border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
-                              borderSide: BorderSide.none,
+                              // borderSide: BorderSide.none,
                             ),
                           ),
                         ),
@@ -376,7 +383,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -389,7 +396,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white60,
+                            color: Colors.grey,
                           ),
                           decoration: InputDecoration(
                             fillColor: Colors.white10,
@@ -404,13 +411,13 @@ class _MyRegisterState extends State<MyRegister> {
                             hintStyle: GoogleFonts.openSans(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white60,
+                              color: Colors.grey,
                             ),
                             hintText: 'Enter Date of Birth',
                             border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
-                              borderSide: BorderSide.none,
+                              // borderSide: BorderSide.none,
                             ),
                           ),
                         ),
@@ -430,7 +437,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -443,7 +450,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white60,
+                            color: Colors.grey,
                           ),
                           decoration: InputDecoration(
                             fillColor: Colors.white10,
@@ -458,13 +465,13 @@ class _MyRegisterState extends State<MyRegister> {
                             hintStyle: GoogleFonts.openSans(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white60,
+                              color: Colors.grey,
                             ),
                             hintText: 'Enter Phone Number',
                             border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
-                              borderSide: BorderSide.none,
+                              // borderSide: BorderSide.none,
                             ),
                           ),
                         ),
@@ -484,7 +491,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -498,7 +505,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white60,
+                            color: Colors.grey,
                           ),
                           decoration: InputDecoration(
                             fillColor: Colors.white10,
@@ -513,13 +520,13 @@ class _MyRegisterState extends State<MyRegister> {
                             hintStyle: GoogleFonts.openSans(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white60,
+                              color: Colors.grey,
                             ),
                             hintText: 'Enter About yourself',
                             border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
-                              borderSide: BorderSide.none,
+                              // borderSide: BorderSide.none,
                             ),
                           ),
                         ),
@@ -539,7 +546,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -552,7 +559,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white60,
+                            color: Colors.grey,
                           ),
                           decoration: InputDecoration(
                             fillColor: Colors.white10,
@@ -567,13 +574,13 @@ class _MyRegisterState extends State<MyRegister> {
                             hintStyle: GoogleFonts.openSans(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white60,
+                              color: Colors.grey,
                             ),
                             hintText: 'Enter Github Url',
                             border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
-                              borderSide: BorderSide.none,
+                              // borderSide: BorderSide.none,
                             ),
                           ),
                         ),
@@ -593,7 +600,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -606,7 +613,7 @@ class _MyRegisterState extends State<MyRegister> {
                           style: GoogleFonts.openSans(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white60,
+                            color: Colors.grey,
                           ),
                           decoration: InputDecoration(
                             fillColor: Colors.white10,
@@ -621,13 +628,13 @@ class _MyRegisterState extends State<MyRegister> {
                             hintStyle: GoogleFonts.openSans(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white60,
+                              color: Colors.grey,
                             ),
                             hintText: 'Enter LinkedIn Url',
                             border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
-                              borderSide: BorderSide.none,
+                              // borderSide: BorderSide.none,
                             ),
                           ),
                         ),

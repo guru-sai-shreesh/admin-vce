@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/flutter_barcode_scanner-Swift.h</key>
 		<data>
-		RXJjuiC7926TB/JXgwOSsTcMDhY=
+		glhwdnfcGCUJcyjm2HF5p+akzXM=
 		</data>
 		<key>Headers/flutter_barcode_scanner-umbrella.h</key>
 		<data>
@@ -18,35 +18,43 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Cs7KKPOODBfZwsh0jUIaZnaonjM=
+		eXlK1f03bj0ULnqM0RJmFFVl7lw=
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		eC0cZBeUrPO0OvQ0S3CxGWpz8EI=
+		oPLITCZp+BhYSRKFCcQNGxUyeWI=
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		k2Ir1FQeJEg6ZKV7tmCKZr1Sfo4=
+		3imYWCFzJLQlFCGr1Wt1gH/TFFU=
+		</data>
+		<key>Modules/flutter_barcode_scanner.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		aeSuzXsT7DZgGXIgRfRP3GGCf+M=
+		1G+WnWFLvMwQNTZW0S18f6Jf67s=
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ldnv/TVsYQvSLRv+KPN0GArBIhc=
+		dPOjuFeUnA/OBGLzvQlIhA9aujA=
+		</data>
+		<key>Modules/flutter_barcode_scanner.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ko6b8+3SMWS6RQfR9R+WVDhjnaA=
+		zKdjOc25JwoOvQXZSw2wmvzDnug=
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Z5tjv4IIw5uBeD7iXrQlUU7n/ks=
+		GF+Pv52Yg7oISe9NiSdWitMMDXk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		wKP8RsVsZNFhOSXFvAvvBOdZwPU=
+		Mie9ich8DGiTMF6QIGFrjzFKwEc=
 		</data>
 		<key>ic_flash_off.png</key>
 		<data>
@@ -74,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			csQ8zdFg9SlyHR5P8ZZ6aAisZBG3tFw55my8LXX0rFc=
+			r/dUxpZedFrmDWqqcw6+uU6DOAWpJdaVMsJCE1DPSKE=
 			</data>
 		</dict>
 		<key>Headers/flutter_barcode_scanner-umbrella.h</key>
@@ -88,49 +96,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X0w5xwGCP1nbjMJNS0k8hSULhwaoxzBpErXCgpyeaHE=
+			HczQffLSi1YpBgmzYqaJJykYQMCXJci9j1TPTwObuKw=
 			</data>
 		</dict>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			780Wg0bUpcpu7lzgmK6OMgoItUUJ+jdaCfRVocCesv8=
+			kJeNBDX5hEDAbBItPkuEzrAn94+RcFiTQteZ0A068x8=
+			</data>
+		</dict>
+		<key>Modules/flutter_barcode_scanner.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5CXfurgRkmy0WLfD4fRFSSWWMb+waqh7HGrKAp52+vs=
+			Y/DaVJNAfkfUxNql6eQkhqSqUqeHqRZkcjQFbc2Lzvk=
 			</data>
 		</dict>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dj0s6JEbCFeYvyu2LTlf8vX91S4k+Ghb0tv9MYol0FY=
+			5F6uKbqnPdVUcOZX5ovxpF3uZUlZWHHfOedd0BiFjLU=
+			</data>
+		</dict>
+		<key>Modules/flutter_barcode_scanner.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2CP1zVYbiEMI0MHtB6bdryC9OAA6YRpRrHNlqbZ2CVk=
+			ATZE62FGSWF8aGdk4hSh8IyodU2tT8xKlVuyZ4DGhH8=
 			</data>
 		</dict>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kAIzCH2YhYKm/V5jruvsOeW9cz522OdvD4ozG/ab3ZA=
+			xZTKl5jnNTJ0m8hiw3Wvo4MOvc2KSuekCNPJY8t0lDk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k8eBojWflyWn6C/jrfZo0fFnnpC7agGIjpLle7AaRk0=
+			PYYuAWHk2GsbqoblSS+ZVKUiqCKwwcyo1cXbsC5jqjw=
 			</data>
 		</dict>
 		<key>ic_flash_off.png</key>
