@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/flutter_barcode_scanner-Swift.h</key>
 		<data>
-		glhwdnfcGCUJcyjm2HF5p+akzXM=
+		EowdAMXRyo3x85CvrYv2Uo7mHqM=
 		</data>
 		<key>Headers/flutter_barcode_scanner-umbrella.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eXlK1f03bj0ULnqM0RJmFFVl7lw=
+		QP6x+2K4uNjxSmJVPXdACScpFlw=
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		oPLITCZp+BhYSRKFCcQNGxUyeWI=
+		/vn3HIdzRZCuLhnwDDEEh9u/ZGU=
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		3imYWCFzJLQlFCGr1Wt1gH/TFFU=
+		96Kz8CjjUneANaiB4PP2gePib6E=
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1G+WnWFLvMwQNTZW0S18f6Jf67s=
+		bcvjns9maXMZ12h0DiYXfzqS9Q8=
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dPOjuFeUnA/OBGLzvQlIhA9aujA=
+		xrYJJyrn7cd+SukGlSRKXpSB/pA=
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zKdjOc25JwoOvQXZSw2wmvzDnug=
+		8r6twPdP68Kl5dhYzXqxRoAvFLI=
 		</data>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GF+Pv52Yg7oISe9NiSdWitMMDXk=
+		zhOnutYojMWh2jCsQp8kureg278=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r/dUxpZedFrmDWqqcw6+uU6DOAWpJdaVMsJCE1DPSKE=
+			OFYafMN8+ugh+jdAFri9rymTLZWiomo0Y8/2lvySJBM=
 			</data>
 		</dict>
 		<key>Headers/flutter_barcode_scanner-umbrella.h</key>
@@ -96,14 +96,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HczQffLSi1YpBgmzYqaJJykYQMCXJci9j1TPTwObuKw=
+			Emadji2/PODQWAQYwjweGitP7apwlicpVkQk+p+3Nug=
 			</data>
 		</dict>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kJeNBDX5hEDAbBItPkuEzrAn94+RcFiTQteZ0A068x8=
+			XGyFf8f27YooboVN0Wvi/j4rhetl0J1ZUbSbIsDFMkk=
 			</data>
 		</dict>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -117,14 +117,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y/DaVJNAfkfUxNql6eQkhqSqUqeHqRZkcjQFbc2Lzvk=
+			xvo2qxzxYr3uRVMzkC4eSuXMnEQCeMbgiCtyckS3Q5s=
 			</data>
 		</dict>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5F6uKbqnPdVUcOZX5ovxpF3uZUlZWHHfOedd0BiFjLU=
+			qihn6nYVzyJP3TszS3GlbI3UqbfbyNmq4yDyS4Jsdv8=
 			</data>
 		</dict>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -138,14 +138,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ATZE62FGSWF8aGdk4hSh8IyodU2tT8xKlVuyZ4DGhH8=
+			lc4J1aDiv7gTiww2aiSvBdaFE2LJUOCIMXrvDO8B4Ak=
 			</data>
 		</dict>
 		<key>Modules/flutter_barcode_scanner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xZTKl5jnNTJ0m8hiw3Wvo4MOvc2KSuekCNPJY8t0lDk=
+			eB0Yc+xkh4WR7do/C2ezrJ+i+aB7MkHr+WU8TjQQve0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
